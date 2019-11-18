@@ -538,8 +538,8 @@ Hook原理：在每次调用一个API返回结果之前，先执行你自己的�
 
 
 ​    
-    RACSignal *reduceSignal = [RACSignal combineLatest:@[signalA, signalB] reduce:^id(NSString *str1, NSString *str2){
-        
+​    RACSignal *reduceSignal = [RACSignal combineLatest:@[signalA, signalB] reduce:^id(NSString *str1, NSString *str2){
+​        
         return [NSString stringWithFormat:@"%@ %@", str1, str2];
     }];
     
